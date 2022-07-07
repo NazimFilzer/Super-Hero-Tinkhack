@@ -5,12 +5,18 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
-const Contact = require("./models/contact")
+const Contact = require("./models/contact");
+require('dotenv').config()
 
-mongoose.connect("mongodb://localhost:27017/contactDB").then(
-  console.log("DB Connected")
-)
 
+mongoose
+  .connect(process.env.DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("DB Connected");
+  });
 
 const app = express();
 
@@ -51,7 +57,7 @@ app.post("/contact", async function (req, res) {
   const data = await Contact.create({ person, phone,area,problem });
   console.log(data);
 
-  res.redirect("/");
+  res.redirect("/home");
 
 });
 
