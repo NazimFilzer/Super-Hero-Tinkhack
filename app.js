@@ -27,7 +27,7 @@ app.use(express.static("public"));
 
 
 
-app.get("/home", function (req, res) {
+app.get("/", function (req, res) {
 
   res.render("home");
 
@@ -56,7 +56,7 @@ app.post("/contact", async function (req, res) {
   const data = await Contact.create({ person, phone,area,problem });
   console.log(data);
 
-  res.redirect("/home");
+  res.redirect("/");
 
 });
 
