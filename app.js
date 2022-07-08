@@ -1,11 +1,11 @@
 //jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
-const ejs = require("ejs");
+const hbs = require("hbs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 const Contact = require("./models/contact");
+const { response } = require("express");
 require('dotenv').config()
 
 
@@ -20,12 +20,11 @@ mongoose
 
 const app = express();
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'hbs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// let posts = [];
 
 
 app.get("/home", function (req, res) {
@@ -60,6 +59,25 @@ app.post("/contact", async function (req, res) {
   res.redirect("/home");
 
 });
+
+
+
+app.get("/responce",async(req,res)=>{
+  
+    Contact.find({},(err,response)=>{
+      res.send(response);
+      console.log(response)
+    })
+    // let responces = await Contact.find();
+    // console.log(responces)
+//     res.json({
+//       person:data.person,
+//       phone:data.phone,
+//       area:data.area,
+//       problem:data.problem
+// })
+  
+})
 
 
 
