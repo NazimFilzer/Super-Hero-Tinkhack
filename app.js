@@ -62,21 +62,13 @@ app.post("/contact", async function (req, res) {
 
 
 
-app.get("/responce",async(req,res)=>{
+app.get("/response",async(req,res)=>{
   
     Contact.find({},(err,response)=>{
       res.send(response);
       console.log(response)
     })
-    // let responces = await Contact.find();
-    // console.log(responces)
-//     res.json({
-//       person:data.person,
-//       phone:data.phone,
-//       area:data.area,
-//       problem:data.problem
-// })
-  
+    
 })
 
 
