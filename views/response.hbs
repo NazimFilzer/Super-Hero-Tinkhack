@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tables</title>
+</head>
+
+<body>
+    <table border="1" cellpadding = "5" cellspacing = "5">
+        <tr>
+            <td>Name</td>
+            <td>PhoneNumber</td>
+            <td>Area   </td>
+            <td>Problem</td>
+        </tr>
+
+        {{#each response}}
+        <tr>
+            <td>{{this.person}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.area}}</td>
+            <td>{{this.problem}}</td>
+        </tr>
+        {{/each}}
+
+    </table>
+
+</body>
+
+</html>

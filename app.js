@@ -6,7 +6,8 @@ const _ = require("lodash");
 const mongoose = require("mongoose");
 const Contact = require("./models/contact");
 const { response } = require("express");
-require('dotenv').config()
+require('dotenv').config();
+var Handlebars = require('handlebars');
 
 
 mongoose
@@ -29,7 +30,7 @@ app.use(express.static("public"));
 
 app.get("/", function (req, res) {
 
-  res.render("home");
+  res.render("home",{ style:"home.css"});
 
 });
 
@@ -65,9 +66,11 @@ app.post("/contact", async function (req, res) {
 app.get("/response",async(req,res)=>{
   
     Contact.find({},(err,response)=>{
-      res.send(response);
-      console.log(response)
+      res.render("response",{response});
+      console.log(response);
     })
+
+    
     
 })
 
