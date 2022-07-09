@@ -2,16 +2,21 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/stylesheets/{{style}}">
     <title>HTML Tables</title>
 </head>
 
 <body>
-    <table border="1" cellpadding = "5" cellspacing = "5">
+    <table border="1" cellpadding="5" cellspacing="5">
         <tr>
             <td>Name</td>
             <td>PhoneNumber</td>
-            <td>Area   </td>
+            <td>Area </td>
             <td>Problem</td>
+            <td>Latitude</td>
+            <td>Longitude</td>
+            <td>More Details</td>
+            <td>Request Created At</td>
         </tr>
 
         {{#each response}}
@@ -20,6 +25,10 @@
             <td>{{this.phone}}</td>
             <td>{{this.area}}</td>
             <td>{{this.problem}}</td>
+            <td>{{this.location.coordinates.[1]}}</td>
+            <td>{{this.location.coordinates.[0]}}</td>
+            <td>{{this.location.formattedAddress}}</td>
+            <td>{{this.createdAt}}</td>
         </tr>
         {{/each}}
 

@@ -13,18 +13,51 @@
     <h1>Contact</h1>
     <form class="" action="/contact" method="post">
         <div class="form-group">
-            <label>Name</label>
-            <input class="form-control" type="text" name="person"> <br>
+            <label for="name">Name</label>
+            <input class="form-control" type="text" id="person" name="person"> <br>
+
             <label>Phone</label>
-            <input class="form-control" type="text" name="phone"> <br>
+            <input class="form-control" type="text" id="phone" name="phone"> <br>
+
             <label>Area</label>
-            <input class="form-control" type="text" name="area"> <br>
+            <input class="form-control" type="text" id="area" name="area" <br>
+
+            <p>Location of your Coordinates.</p>
+            <p>
+                latitude: <span id="latitude"></span>&deg;<br>
+                longitude: <span id="longitude"></span>&deg;
+            </p>
+
+
             <label>Problems</label>
-            <input class="form-control" type="text" name="problem">
+            <input class="form-control" type="text" id="problem" name="problem"> <br>
+
 
         </div>
-        <button class="btn btn-primary" type="submit" name="button">Publish</button>
+        <button id="submit" class="btn btn-primary" type="submit" name="button">Publish</button>
     </form>
+
+    <script>
+        let lat, lon;
+        
+
+
+
+        if ("geolocation" in navigator) {
+            console.log("Geo is available");
+            navigator.geolocation.getCurrentPosition(async position => {
+                const name = document.getElementById("person").value;
+                lat = position.coords.latitude;
+                lon = position.coords.longitude;
+                document.getElementById('latitude').textContent = lat;
+                document.getElementById('longitude').textContent = lon;
+            });
+        } else {
+            console.log("no geo")
+        }
+
+    </script>
+
 </body>
 
 </html>
