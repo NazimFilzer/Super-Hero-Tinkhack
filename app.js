@@ -31,7 +31,7 @@ app.use(express.static("public"));
 
 app.get("/", function (req, res) {
 
-  res.render("home", { style: "home.css" });
+  res.render("home", { style: "style.css" });
 
 });
 
@@ -51,9 +51,9 @@ app.get("/contact", function (req, res) {
 app.post("/contact", async function (req, res) {
 
   try {
-    const {  person, phone, area, problem } = req.body
+    const { person, phone, area, problem } = req.body
 
-    const data = await Contact.create({ person, phone, area, problem});
+    const data = await Contact.create({ person, phone, area, problem });
     console.log(data);
     res.redirect("/");
 
