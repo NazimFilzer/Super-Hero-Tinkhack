@@ -1,9 +1,35 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3);
+}
 .color1{
     background-color: #543ce0;
 }
 .color0{
     
     background-color: #080c52 ;
+}
+
+.backgroundbox{
+    border-radius: 2em;
+    height: 100%;
+   
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  position: relative;
+  z-index: 10;
+
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+
+
+.mobileform{
+    position: absolute;
+width: 248px;
+height: 476px;
+left: 46px;
+top: 196px;
 }
 
 .avatar1{

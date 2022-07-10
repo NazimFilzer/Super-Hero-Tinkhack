@@ -1,4 +1,3 @@
-//jshint esversion:6
 require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -57,9 +56,6 @@ app.post("/contact", async function (req, res) {
     const data = await Contact.create({ person, phone, area, problem });
     console.log(data);
     res.redirect("/");
-
-
-
   } catch (err) {
     console.log(err.message);
   }
