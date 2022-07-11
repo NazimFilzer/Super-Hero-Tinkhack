@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/stylesheets/{{style}}">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/{{style}}">
+    <title>Document</title>
 </head>
   <nav>
          <div class="nav-left mb-5">
@@ -75,27 +74,24 @@
       </form>
       </div>
     </div>
-  </div>
-</div>
 </body>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 <script>
-        let lat, lon;
-        
+    let lat, lon;
+    if ("geolocation" in navigator) {
+        console.log("Geo is available");
+        navigator.geolocation.getCurrentPosition(async position => {
+            const name = document.getElementById("person").value;
+            lat = position.coords.latitude;
+            lon = position.coords.longitude;
+            document.getElementById('latitude').textContent = lat;
+            document.getElementById('longitude').textContent = lon;
+        });
+    } else {
+        console.log("no geo")
+    }
 
+</script>
 
-
-        if ("geolocation" in navigator) {
-            console.log("Geo is available");
-            navigator.geolocation.getCurrentPosition(async position => {
-                const name = document.getElementById("person").value;
-                lat = position.coords.latitude;
-                lon = position.coords.longitude;
-                document.getElementById('latitude').textContent = lat;
-                document.getElementById('longitude').textContent = lon;
-            });
-        } else {
-            console.log("no geo")
-        }
-
-    </script>
 </html>
