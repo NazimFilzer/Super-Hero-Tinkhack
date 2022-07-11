@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <div class="bg">
+    <div class="bg1 md:h-100 w-100 xl:h-100 w-100 ">
       
     </div>
     <div class="bganime">
@@ -31,24 +31,33 @@
       <div class="firefly"></div>
       <div class="firefly"></div>
    </div>
-     <nav>
+     <nav class="nav1 backdrop-opacity-10 backdrop-blur-lg md:backdrop-blur-lg xl:md:bg-transparent">
          <div class="nav-left">
             <h2>Super Sugu</h2>
          </div>
-         <div class="nav-right ">
-              <div class="notification-icon">
+          <div class="w-6 block md:hidden">
+            <label for="navbarToggler">
+                <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
+                <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
+                <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
+            </label>
+        </div>
+        <input type="checkbox" id="navbarToggler" class="hidden">
+         <div class="nav-right top-16 left-0 hidden md:flex flex-col  md:flex-row justify-evenly items-center m-6 gap-6 ">
+          
+              <div class="hidden notification-icon xl:block ">
                 <img src="/image/notification.png" alt="">
               </div>
-              <div class="nav-button">
+              <div class="nav-button hover:">
                 <a href="/">Home</a>
               </div>
-              <div class="nav-button">
+              <div class="nav-button hover:">
                 <a href="/powers">Features</a>
               </div>
-              <div class="nav-button">
+              <div class="nav-button hover:">
                 <a href="/merch">Merchandise</a>
               </div>
-              <div class="nav-button">
+              <div class="nav-button hover:bg-white hover:blur-xl">
                 <a href="/contact">Contact Me</a>
               </div>
               
@@ -62,7 +71,7 @@
     <div class="paragraph">
       <p>A superhero or superheroine is a stock character that possesses superpowers, and fits the role of the hero, typically using his or her powers to help the world become a better place, or dedicating themselves to protecting the public and fighting crime.</p>
       <div class="button">
-        <a href="#">Are you In danger</a>
+        <a href="/contact">Are you In danger</a>
       </div>
 
     </div>

@@ -4,13 +4,18 @@
     font-family:SFPRODISPLAYREGULAR, sans-serif;
     box-sizing: border-box;
 }
+
+#navbarToggler:checked+div {
+  position: absolute;
+  display: flex;
+}
 html{
     scrollbar-width: thin;
     
 }
 body,html{
     height: 100%;
-}
+} 
 html::-webkit-scrollbar{
     width: 2vh;
 
@@ -50,7 +55,7 @@ a,p{
     font-family: SFPRODISPLAYMEDIUM;
     
 }
-.bg{
+.bg1{
   background-image: url("/image/bg.jpg");
   height: 100%;
   width: 100%;
@@ -142,10 +147,11 @@ nav{
     position:relative;
 }
 
-.bg img{
-    position: fixed;
-    width: 230vh;
+.bg1 img{
+   height: auto;
+   width: 100%;
 }
+
 .content{
     position: fixed;
     margin-top: 8%;
@@ -153,6 +159,10 @@ nav{
     color: #ffffff;
     width:26%
 
+}
+.nav1{
+  background-color: #beb9b914;
+  backdrop-filter: blur(20%);
 }
 .name{
     margin-bottom: 20px;
