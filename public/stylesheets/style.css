@@ -8,6 +8,20 @@ html{
     scrollbar-width: thin;
     
 }
+#navbarToggler:checked+div {
+  position: absolute;
+  display: flex;
+}
+#navbarToggler:checked+.bg {
+backdrop-filter: blur(50px);
+}
+
+
+
+.nav1{
+  background-color: #beb9b914;
+  backdrop-filter: blur(20%);
+}
 body,html{
     height: 100%;
 }
@@ -59,8 +73,8 @@ a,p{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-}
+  position: fixed;}
+ 
 .bg2{
     background-image: url("/image/bg2.png");
     height: 100%;

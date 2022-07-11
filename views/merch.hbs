@@ -8,6 +8,7 @@
   <title>Features</title>
   <link rel="stylesheet" href="/stylesheets/{{style}}">
   <link rel="icon" type="image/x-icon" href="image/">
+   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -31,32 +32,39 @@
     <div class="firefly"></div>
     <div class="firefly"></div>
   </div>
-  <nav>
-    <div class="nav-left">
-      <a href="/"><img class="logo" src="/image/logo.png"></a>
-    </div>
-    <div class="nav-right">
-      <!--<div class="notification-icon">
-                <img src="image/notification.png" alt="">
-              </div>--->
-      <div class="nav-button">
-        <a href="/">Home</a>
-      </div>
-      <div class="nav-button">
-        <a href="/powers">Powers</a>
-      </div>
-      <div class="nav-button">
-        <a href="/merch">Merchandise</a>
-      </div>
-      <div class="nav-button">
-        <a href="/contact">Contact Me</a>
-      </div>
+<nav class="nav1 backdrop-opacity-10 backdrop-blur-lg md:backdrop-blur-lg xl:md:bg-transparent">
+         <div class="nav-left">
+               <a href="/"><img class="logo" src="/image/logo.png"></a>
+    
+         </div>
+          <div class="w-6 block md:hidden">
+            <label for="navbarToggler">
+                <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
+                <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
+                <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
+            </label>
+        </div>
+        <input type="checkbox" id="navbarToggler" class="hidden">
+         <div class="nav-right top-16 left-0 hidden md:flex flex-col  md:flex-row justify-evenly items-center m-6 gap-6 ">
+          
+              <div class="nav-button transition duration-300 hover:scale-105">
+                <a href="/">Home</a>
+              </div>
+              <div class="nav-button transition duration-300 hover:scale-105">
+                <a href="/powers">Features</a>
+              </div>
+              <div class="nav-button transition duration-300 hover:scale-105">
+                <a href="/merch">Merchandise</a>
+              </div>
+              <div class="nav-button  transition duration-300 hover:scale-105">
+                <a href="/contact">Contact Me</a>
+              </div>
+              
+         </div>
+     </nav>
 
-    </div>
-  </nav>
-
-  <div class="row-product">
-    <div class="item-box">
+  <div class="row-product md:">
+    <div class="item-box  transition duration-300 hover:scale-105">
       <div class="item-image">
         <img src="image/tshirt.png">
       </div>
@@ -70,7 +78,7 @@
       </div>
     </div>
 
-    <div class="item-box">
+    <div class="item-box transition duration-300 hover:scale-105">
       <div class="item-image">
         <img src="image/tshirt.png">
       </div>
@@ -84,7 +92,7 @@
       </div>
     </div>
 
-    <div class="item-box">
+    <div class="item-box transition duration-300 hover:scale-105">
       <div class="item-image">
         <img src="image/tshirt.png">
       </div>
@@ -103,7 +111,7 @@
 
   <div class="row-product-1">
 
-    <div class="item-box">
+    <div class="item-box transition duration-300 hover:scale-105">
       <div class="item-image">
         <img src="image/tshirt.png">
       </div>
@@ -117,7 +125,7 @@
       </div>
     </div>
 
-    <div class="item-box">
+    <div class="item-box transition duration-300 hover:scale-105">
       <div class="item-image">
         <img src="image/tshirt.png">
       </div>
@@ -131,7 +139,7 @@
       </div>
     </div>
 
-    <div class="item-box">
+    <div class="item-box transition duration-300 hover:scale-105">
       <div class="item-image">
         <img src="image/tshirt.png">
       </div>
