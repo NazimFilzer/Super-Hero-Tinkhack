@@ -35,13 +35,12 @@ app.get("/", function (req, res) {
 
 });
 
-
 app.get("/powers", function (req, res) {
-  res.render("powers");
+  res.render("powers",{style:"style.css"});
 });
 
 app.get("/merch", function (req, res) {
-  res.render("merch");
+  res.render("merch",{style:"style.css"});
 });
 
 app.get("/contact", function (req, res) {
