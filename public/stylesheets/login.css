@@ -1,3 +1,20 @@
+@font-face {
+    font-family: SFPRODISPLAYREGULAR;
+    src: url(/font/SFPRODISPLAYREGULAR.OTF);
+  }
+@font-face {
+    font-family: SFPRODISPLAYMEDIUM;
+    src: url(/font/SFPRODISPLAYMEDIUM.OTF);
+  }
+@font-face {
+    font-family: SFPRODISPLAYBOLD;
+    src: url(/font/SFPRODISPLAYBOLD.OTF);
+  }
+
+  a,p,span,input{
+    font-family: SFPRODISPLAYMEDIUM;
+    
+}
 body{
     background-image: url(/image/bg4.jpg);
     height: 100vh;
@@ -5,6 +22,7 @@ body{
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor:url(/image/logo.cur),auto;
   
 }
 .color1{
