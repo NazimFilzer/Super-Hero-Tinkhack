@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/{{style}}">
+    <title>Document</title>
+</head>
+
+<body class="color0 text-gray-100 px-8 py-12 overflow-hidden ">
+    <div class="flex mb-4 ">
+        <div class="sm:w-full md:w-1/3  p-5 girounded flex-1 backgroundbox">
+            <form action="/login" method="post">
+                <div>
+                    <span class="uppercase text-sm text-gray-600 font-bold">Enter Username</span>
+                    <input id="username" name="username"
+                        class="form-control w-full bg-gray-300 text-gray-900 mt-1 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="">
+                </div>
+                <div class="mt-4">
+                    <span class="uppercase text-sm text-gray-600 font-bold">Enter Passwoord</span>
+                    <input id="password" name="password"
+                        class="w-full form-control bg-gray-300 text-gray-900 mt-1 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="password">
+                <div class="mt-4">
+                    <button id="submit" type="submit" 
+                        class="btn btn-primary uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-100  focus:outline-none focus:shadow-outline hover:bg-indigo-600 active:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300">
+                        Send Message
+                    </button>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+
+</html>

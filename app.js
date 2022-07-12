@@ -5,6 +5,7 @@ const hbs = require("hbs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
 const Contact = require("./models/contact");
+const Auth = require("./models/auth");
 const { response } = require("express");
 const geolocation = require('geolocation');
 const cors = require('cors');
@@ -36,11 +37,11 @@ app.get("/", function (req, res) {
 });
 
 app.get("/powers", function (req, res) {
-  res.render("powers",{style:"style.css"});
+  res.render("powers", { style: "style.css" });
 });
 
 app.get("/merch", function (req, res) {
-  res.render("merch",{style:"style.css"});
+  res.render("merch", { style: "style.css" });
 });
 
 app.get("/contact", function (req, res) {
@@ -61,12 +62,34 @@ app.post("/contact", async function (req, res) {
 
 });
 
+app.get("/login", (req, res) => {
+  res.render("login", { style: "login.css" })
 
+})
+
+app.post("/login", async (req, res) => {
+  console.log(req.body);
+
+  try {
+    const user = await Auth.findOne({ username: req.body.username });
+    if (user) {
+      if (user.password == req.body.password) {
+        res.redirect("/response")
+
+      } else {
+        res.send("Passoword is Incorrect")
+      }
+    } else {
+      res.send("User not found")
+    }
+  } catch (err) {
+    console.log(err);
+  }
+})
 
 app.get("/response", async (req, res) => {
   Contact.find({}, (err, response) => {
     res.render("response", { response, style: "response.css" });
-    // console.log(response);
   })
 
 })
