@@ -1,3 +1,17 @@
 body{
     background-image: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3);
 }
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: rgb(0, 212, 240);}
