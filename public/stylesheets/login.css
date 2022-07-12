@@ -1,5 +1,11 @@
 body{
-    background-image: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3);
+    background-image: url(/image/bg4.jpg);
+    height: 100vh;
+  width: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .color1{
     background-color: #543ce0;
@@ -20,6 +26,79 @@ body{
 
   overflow: hidden;
   backdrop-filter: blur(5px);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 2% 10px 1.5%;
+    position: sticky;
+    top:0;
+    z-index: 5;
+    
+}
+.logo{
+    width: 130px;
+    padding: 4px;
+    margin-right: 16.5px;
+
+  
+}
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    margin-right: 40px;
+}
+.nav-user-icon img{
+    width: 31px;
+    border-radius: 20%;
+    cursor: pointer;
+    margin-top: 3px;
+    
+}
+.nav-button  a{
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 23px;
+    padding: 10px 22px 12px 22px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.notification-icon {
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 23px;
+    padding: 5px 10px 7px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+}
+.nav-button:hover a{
+    filter: brightness(1.5);
+    background: rgba(255, 255, 255, 0.24);
+
+
+}
+.notification-icon img{
+    width: 18px;
+    opacity: .5;
+    margin-top: 5px;
+}
+.nav-user-icon{
+    margin-left: 20px;
+}
+.nav-button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-family: SFPRODISPLAYMEDIUM;
+    opacity: 1;
+}a
+.online{
+    position:relative;
 }
 
 
