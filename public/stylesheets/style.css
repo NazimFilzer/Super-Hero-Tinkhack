@@ -45,6 +45,7 @@ body{
     -o-user-select: none;
     user-select: none;
     cursor:url(/image/logo.cur),auto;
+    font-family: "poppins";
     
 }
 

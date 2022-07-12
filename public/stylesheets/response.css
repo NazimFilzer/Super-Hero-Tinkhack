@@ -1,17 +1,41 @@
 body{
-    background-image: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3);
+    background-image: url(/image/data.jpg);
+    padding: 2%;
 }
 
 
 table {
   border-collapse: collapse;
   width: 100%;
+  background: rgb(221, 221, 221);
+  border-radius: 20px;
+  padding: 15px;
+  border-color: rgba(255, 255, 255, 0);
+  outline: none;
+}
+@font-face {
+  font-family: SFPRODISPLAYREGULAR;
+  src: url(/font/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: SFPRODISPLAYMEDIUM;
+  src: url(/font/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face {
+  font-family: SFPRODISPLAYBOLD;
+  src: url(/font/SFPRODISPLAYBOLD.OTF);
 }
 
 th, td {
-  padding: 8px;
+  padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
 }
-
-tr:hover {background-color: rgb(0, 212, 240);}
+.h8{
+  font-weight: 300;
+  font-family: SFPRODISPLAYBOLD;
+  font-size: 3vh;
+}
+td{
+  font-size: 2vh;
+}
+tr:hover {background-color: rgba(0, 15, 112, 0.278);}
