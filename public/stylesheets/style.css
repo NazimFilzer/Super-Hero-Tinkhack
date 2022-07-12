@@ -6,7 +6,7 @@
 }
 html{
     scrollbar-width: thin;
-    
+   
 }
 body,html{
     height: 100%;
@@ -44,7 +44,7 @@ body{
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-   
+    cursor:url(/image/logo.cur),auto;
     
 }
 
@@ -53,16 +53,17 @@ a,p{
     
 }
 .bg{
-  background-image: url("/image/bg.png");
+  background-image: url("/image/bg.jpg");
   height: 100%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
+  
 }
 .bg2{
-    background-image: url("/image/bg2.png");
+    background-image: url("/image/bg2.jpg");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -71,7 +72,7 @@ a,p{
     position: fixed;
 }
 .bg3{
-  background-image: url("/image/bg3.png");
+  background-image: url("/image/bg3.jpg");
   height: 100%;
   width: 100%;
   background-position: center;
@@ -80,7 +81,7 @@ a,p{
   position: fixed;
 }
 .bg4{
-  background-image: url("/image/bg4.png");
+  background-image: url("/image/bg4.jpg");
   height: 100%;
   width: 100%;
   background-position: center;
@@ -96,6 +97,7 @@ nav{
     position: sticky;
     top:0;
     z-index: 5;
+    
 }
 .logo{
     width: 130px;
@@ -127,6 +129,7 @@ nav{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
+
 .notification-icon {
     border-radius: 8px;
     cursor: pointer;
@@ -135,8 +138,11 @@ nav{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px); 
 }
-.nav-button:hover{
+.nav-button:hover a{
     filter: brightness(1.5);
+    background: rgba(255, 255, 255, 0.24);
+
+
 }
 .notification-icon img{
     width: 18px;
@@ -166,7 +172,7 @@ nav{
     margin-top: 6%;
     margin-left:60%;
     color: #ffffff;
-    width:26%
+    width:50vh;
 
 }
 .name{
@@ -177,6 +183,8 @@ nav{
 .paragraph p{
     font-size: 14px;
     opacity: .8;
+    font-family: SFPRODISPLAYREGULAR ;
+
 
 }
 .button{
@@ -191,7 +199,11 @@ nav{
     padding: 10px 20px;
     color: #ffffff;
 }
+.button:hover a{
+  background: rgb(147 94 247 / 9%);
+  transform: scale(1.5);
 
+}
 .row-product{
   display: flex;
   position: fixed;
@@ -267,9 +279,12 @@ nav{
   text-decoration: none;
   color: #00ff40;
 }
-
-
-
+.heading-h2{
+  display: none;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
 
 
 .firefly {
@@ -1525,4 +1540,109 @@ nav{
       opacity: 1;
       box-shadow: 0 0 2vw 0.4vw yellow;
     }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+
+    .bg2{
+      background-image: url("/image/bg2.jpg");
+      height: 100%;
+      width: 100%;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: fixed;
+  }
+  
+.row-product{
+  
+  position: relative;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 10vh;
+  padding: 20px;
+  margin: auto;
+  margin-top: 40%;
+  width: 100%;
+
+
+}
+.row-product-1{
+  
+  position: relative;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 10vh;
+  padding: 20px;
+  margin: auto;
+  margin-top: 0%;
+
+}
+.item-box{
+  height: 25.5vh;
+  width: 25vh;
+  background-color: rgba(255, 255, 255, .1);  
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  text-align: center;
+  margin-right: 30px;
+  
+
+}
+.item-image{
+  background: #dfdfdf67;
+  padding: 12px;
+  align-items: center;
+  border-radius: 8px;
+
+}
+.item-image img{
+  width: 13vh;
+}
+.item-details{
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+
+}
+.item-details h5{
+  font-weight: 600;
+  font-size: 2vh;
+  text-align: left;
+  padding: 12px 10px 8px 15px;
+  color: #ffffff;
+}
+.bottom-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.bottom-details p{
+  flex-basis: 50%;
+  font-size: 1.6vh;
+  color: rgb(255, 255, 255);
+}
+.bottom-details a{
+  flex-basis: 50%;
+  background: #ffffff40;
+  padding:4px;
+  align-items: center;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 1.5vh;
+  text-decoration: none;
+  color: #00ff40;
+}
+.heading-h2{
+  display: block;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  top:16vh;
+
+}
+
+
   }

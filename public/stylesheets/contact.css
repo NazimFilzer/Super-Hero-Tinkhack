@@ -69,7 +69,7 @@ a,p{
     position: fixed;
 }
 .bg3{
-  background-image: url("/image/bg3.png");
+  background-image: url("/image/bg3.jpg");
   height: 100%;
   width: 100%;
   background-position: center;
@@ -125,8 +125,11 @@ nav{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px); 
 }
-.nav-button:hover{
-    filter: brightness(1.5);
+.nav-button:hover a{
+  filter: brightness(1.5);
+  background: rgba(255, 255, 255, 0.24);
+
+
 }
 .notification-icon img{
     width: 18px;
@@ -181,6 +184,7 @@ nav{
     padding: 10px 20px;
     color: #ffffff;
 }
+
 
 .row-product{
   display: flex;
@@ -261,8 +265,8 @@ nav{
     height: 100%;
     border-radius: 30px;
     overflow: hidden;
-    margin-top: 10%;
-    margin-left: 40%;
+    margin-top: 14%;
+    margin-left: 30%;
   }
 .contact{
     position: fixed;
@@ -343,7 +347,7 @@ form{
   margin-bottom: 8px;
   border-radius: 8px;
   width: 100%;
-  font-size: 2vh;
+  font-size: 1.9vh;
   color: #3d3d3d;
   
 }
@@ -2072,6 +2076,7 @@ textarea{
     }
   }
 
+
   @media only screen and (max-width: 768px) {
 
     body{
@@ -2079,10 +2084,10 @@ textarea{
     }
 
     .bg3{
-  background-image: url("/image/bg4.png");
+  background-image: url("/image/bg4.jpg");
   height: 100%;
   width: 100%;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
@@ -2090,17 +2095,31 @@ textarea{
 
 .contact{
 
-  top: 50%;
+  top: 45%;
   background: rgb(255, 255, 255);
   backdrop-filter: blur(20px);
   padding: 3vh;
+  width: 50%;
   box-shadow: rgba(149, 157, 165, 0.071) 10px 0px 30px;
   border-radius: 20px;
-  margin-left: 20%;
+  margin-left: 0%;
   width: 100%;
-  position: relative;
+  position: fixed;
   align-items: center;
+  background-position: center;
 
+  
+}
+.contact-form input,textarea{
+  background: rgb(0 0 0 / 9%);
+  border: none;
+  padding: 8px 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.5vh;
+  color: #3d3d3d;
   
 }
   }
