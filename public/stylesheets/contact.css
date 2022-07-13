@@ -15,6 +15,10 @@ html::-webkit-scrollbar{
     width: 2vh;
 
 }
+#navbarToggler:checked+div {
+  position: absolute;
+  display: flex;
+}
 html::-webkit-scrollbar-thumb{
     background-color: #62626228;
     border-radius: 10px;
