@@ -18,10 +18,7 @@ backdrop-filter: blur(50px);
 
 
 
-.nav1{
-  background-color: #beb9b914;
-  backdrop-filter: blur(20%);
-}
+
 body,html{
     height: 100%;
 }
