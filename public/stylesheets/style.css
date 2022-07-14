@@ -352,6 +352,7 @@ nav{
   font-size: 1.9vh;
   margin-top: 1.8vh;
   letter-spacing: .6px;
+  font-family: SFPRODISPLAYREGULAR;
 
 }
 .power-content1 h2{
@@ -365,6 +366,8 @@ nav{
   font-size: 1.9vh;
   margin-top: 1.8vh;
   letter-spacing: .6px;
+  font-family: SFPRODISPLAYREGULAR;
+
 
 }
 .power-image1{
@@ -1953,21 +1956,25 @@ transform: scale(1.5);
 }
 .power-content h2{
   color: #ffffffda;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 .power-content p{
   color: #ffffffda;
-  font-size: 1.9vh;
+  font-size: 1.5vh;
   margin-top: 1.8vh;
+  font-family: SFPRODISPLAYREGULAR;
+
 }
 .power-content1 h2{
   color: #ffffffda;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 .power-content1 p{
   color: #ffffffda;
-  font-size: 1.9vh;
+  font-size: 1.5vh;
   margin-top: 1.8vh;
+  font-family: SFPRODISPLAYREGULAR;
+
 }
 .power-image1{
   width: 100%;
@@ -2015,7 +2022,7 @@ transform: scale(1.5);
   position: relative;
   flex-basis: 50%;
   flex-direction: column;
-  margin-top: 30vh;
+  margin-top: 27vh;
   height: 48%;
 
 }
