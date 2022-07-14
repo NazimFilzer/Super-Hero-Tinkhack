@@ -2093,4 +2093,15 @@ transform: scale(1.5);
 
 
 }
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 2% 10px 1.5%;
+  position: sticky;
+  top:0;
+  z-index: 5;
+  background: rgba(44, 44, 44, 0.078);
+  backdrop-filter: blur(17px);
+}
   }
