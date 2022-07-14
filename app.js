@@ -32,7 +32,7 @@ app.use(express.static("public"));
 
 app.get("/", function (req, res) {
 
-  res.render("home", { style: "style.css" });
+  res.render("home", { style: "homestyle.css" });
 
 });
 

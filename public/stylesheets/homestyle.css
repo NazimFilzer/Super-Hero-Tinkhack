@@ -1681,7 +1681,7 @@ nav{
 
   @media only screen and (max-width: 768px) {
 
-    html, body {margin: 0; height: 100%; }
+    html, body {margin: 0; height: 100%;overflow: hidden; }
 
     .bg2{
       background-image: url("/image/bg2.jpg");
