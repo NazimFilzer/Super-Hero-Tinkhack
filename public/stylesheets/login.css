@@ -147,3 +147,57 @@ top: 196px;
 .text-color3{
     color:#9B969B
 }
+.nav-right1{
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+  .nav-right1{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+  }
+  .nav-right{
+    display: none;
+  
+  }
+  
+  .nav-button img{
+    width: 24px;
+    border-radius: 20%;
+    cursor: pointer;
+    margin-top: 3px;
+    padding: 5px;
+    background: rgba(129, 129, 129, 0.078);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  
+    
+  }
+  .nav-button:hover img{
+    filter: brightness(1.5);
+  
+  }
+  .nav-button  a{
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 6px;
+    padding: 1px;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
+  .nav-button:hover a{
+    filter: brightness(1.5);
+    background: rgba(255, 255, 255, 0);
+  
+  
+  
+  }
+.flex{
+    width: 100%;
+}
+.jam{
+    width: 100%;
+}
+}
