@@ -15,6 +15,10 @@ html::-webkit-scrollbar{
     width: 2vh;
 
 }
+#navbarToggler:checked+div {
+  position: absolute;
+  display: flex;
+}
 html::-webkit-scrollbar-thumb{
     background-color: #62626228;
     border-radius: 10px;
@@ -353,6 +357,7 @@ form{
   color: #3d3d3d;
   
 }
+
 input:focus{
   outline: none;
   background: rgba(255, 255, 255, 0.09);
@@ -2087,7 +2092,7 @@ textarea{
 
     .bg3{
   background-image: url("/image/bg4.jpg");
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-position: top;
   background-repeat: no-repeat;
@@ -2106,7 +2111,7 @@ textarea{
   border-radius: 20px;
   margin-left: 0%;
   width: 100%;
-  position: fixed;
+  position: absolute;
   align-items: center;
   background-position: center;
 

@@ -8,6 +8,14 @@ html{
     scrollbar-width: thin;
    
 }
+#navbarToggler:checked+div {
+  position: absolute;
+  display: flex;
+}
+#navbarToggler:checked+.bg {
+backdrop-filter: blur(50px);
+}
+
 body,html{
     height: 100%;
 }
@@ -61,8 +69,8 @@ a,p{
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
-  
 }
+ 
 .bg2{
     background-image: url("/image/bg2.jpg");
     height: 100%;
@@ -286,8 +294,103 @@ nav{
   text-align: center;
   color: #ffffff;
 }
+.powers{
+  position: fixed;
+
+  
+  background: #ffffff;
+  text-align: center;
+  margin: 0% 10%;
+  width: 78%;
+  height: 80vh;
+}
+.list-power{
+  display: flex;
+  background: #00ff40;
+  width: 100%;
+  position: relative;
+  height: 30vh;
+  flex-basis: 50%;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+}
+.fire{
+  background: #053210;
+  width: 100%;
+  height: 100%;
+  display: flex;
 
 
+}
+.power-image{
+  background: #828282;
+  width: 100%;
+  flex-basis: 20% ;
+
+
+}
+.power-image img{
+  width: 100%;
+  border-radius: 100%;
+}
+.power-content{
+  background: #151d51;
+  width: 100%;
+  flex-basis: 80% ;
+
+
+}
+.power-image1{
+  background: #828282;
+  width: 100%;
+  flex-basis: 20% ;
+
+
+}
+.power-image1 img{
+  width: 100%;
+  border-radius: 100%;
+}
+.power-content1{
+  background: #151d51;
+  width: 100%;
+  flex-basis: 50% ;
+  text-align: left;
+
+
+
+}
+.earth{
+  background: #0c130e;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+
+
+}
+.list-power1{
+  display: flex;
+  background: #00ff40;
+  width: 100%;
+  position: relative;
+  height: 30vh;
+  flex-basis: 50%;
+}
+.electricity{
+  background: #053210;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+.water{
+  background: #0c130e;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
 .firefly {
     position: fixed;
     left: 50%;
