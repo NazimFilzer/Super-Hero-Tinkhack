@@ -191,7 +191,11 @@ nav{
     margin-bottom: 20px;
     font-family: SFPRODISPLAYBOLD;
     font-size: 20px;
+    font: 700 normal 1.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+
 }
+
 .paragraph p{
     font-size: 14px;
     opacity: .8;
@@ -300,16 +304,13 @@ nav{
 .powers{
   position: fixed;
 
-  
-  background: #ffffff;
   text-align: center;
-  margin: 0% 10%;
+  margin: 0% 7% 0% 7.5%;
   width: 78%;
   height: 80vh;
 }
 .list-power{
   display: flex;
-  background: #00ff40;
   width: 100%;
   position: relative;
   height: 30vh;
@@ -317,83 +318,110 @@ nav{
   margin-bottom: 10vh;
   margin-top: 5vh;
 }
-.fire{
-  background: #053210;
-  width: 100%;
-  height: 100%;
-  display: flex;
 
-
-}
 .power-image{
-  background: #828282;
   width: 100%;
-  flex-basis: 20% ;
+  flex-basis: 16% ;
 
 
 }
 .power-image img{
   width: 100%;
-  border-radius: 100%;
+  border-radius: 20%;
 }
 .power-content{
-  background: #151d51;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
   width: 100%;
-  flex-basis: 80% ;
+  flex-basis: 50% ;
+  text-align: left;
+  padding: 17px 17px;
+  border-radius: 10%;
+  margin-right: 4%;
+  
 
 
 }
+.power-content h2{
+  color: #350051;
+  font-size: 3vh;
+}
+.power-content p{
+  color: #350051;
+  font-size: 1.9vh;
+  margin-top: 1.8vh;
+}
+.power-content1 h2{
+  color: #350051;
+  font-size: 3vh;
+}
+.power-content1 p{
+  color: #350051;
+  font-size: 1.9vh;
+  margin-top: 1.8vh;
+}
 .power-image1{
-  background: #828282;
   width: 100%;
-  flex-basis: 20% ;
+  flex-basis: 16% ;
 
 
 }
 .power-image1 img{
   width: 100%;
-  border-radius: 100%;
+  border-radius: 10%;
 }
 .power-content1{
-  background: #151d51;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
   width: 100%;
   flex-basis: 50% ;
   text-align: left;
+  padding: 17px 17px;
+  border-radius: 10%;
+  margin-left: 4%;
 
 
 
 }
-.earth{
-  background: #0c130e;
+.fire{
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
+
+}
+.earth{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 
 
 }
 .list-power1{
   display: flex;
-  background: #00ff40;
   width: 100%;
   position: relative;
   height: 30vh;
   flex-basis: 50%;
 }
 .electricity{
-  background: #053210;
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+
 
 }
 .water{
-  background: #0c130e;
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+
 
 }
+
 .firefly {
     position: fixed;
     left: 50%;
@@ -434,6 +462,7 @@ nav{
     animation-duration: 9s, 10144ms;
     animation-delay: 0ms, 6083ms;
   }
+
   
   @keyframes move1 {
     0% {
@@ -1662,6 +1691,20 @@ nav{
       position: fixed;
   }
   
+    body{
+      text-align: center;
+    }
+
+    .bg{
+  background-image: url("/image/bg5.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
 .row-product{
   
   position: relative;
@@ -1744,12 +1787,246 @@ nav{
 }
 .heading-h2{
   display: block;
-  position: relative;
+  position: absolute;
   text-align: center;
   color: #ffffff;
   top:16vh;
+  left: 12vh;
+
+}
+
+.content{
+  top: 45%;
+  
+  background: rgba(52, 52, 52, 0.24);
+  backdrop-filter: blur(20px);
+  padding: 3vh;
+  width: 50%;
+  box-shadow: rgba(149, 157, 165, 0.071) 10px 0px 30px;
+  border-radius: 20px;
+  margin-left: 0%;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  background-position: center;
+  color: #000000;
+  
+
+}
+.name{
+  margin-bottom: 20px;
+  font-family: SFPRODISPLAYBOLD;
+  font-size: 20px;
+  color: #ffffff;
+  font:SFPRODISPLAYBOLD;
+  text-shadow: 0px 0px #222324, 0px 0px #222324, 0px 0px #222324;
+  margin-top: 3vh;
+}
+.paragraph p{
+  font-size: 14px;
+  opacity: .8;
+  font-family: SFPRODISPLAYREGULAR ;
+  color: #ffffff;
+
+
+}
+.button{
+  margin-top: 30px;
+  margin-bottom: 10vh;
+
+}
+.button a{
+  text-decoration: none;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.208);
+  backdrop-filter: blur(18px);
+  border-radius: 32px;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.button:hover a{
+background: rgb(147 94 247 / 9%);
+transform: scale(1.5);
+
+}
+
+.row-product{
+  display: flex;
+  position: absolute;
+  margin-top: 21%;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  padding: 20px;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch
+
+}
+.row-product-1{
+  display: flex;
+  position: absolute;
+  margin-top: 115vh;
+  margin-left: 10vh;
+  padding: 20px;
+  margin-right: 40%;
+  flex-direction: column;
+  text-align: center;
+  align-items: stretch
+
+
+}
+.item-box{
+  height: 30vh;
+  width: 25vh;
+  background-color: rgba(255, 255, 255, .1);  
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 5vh;
+  
 
 }
 
 
+.powers{
+  position: absolute;
+
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 80vh;
+}
+.list-power{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 40%;
+  flex-basis: 50%;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+  flex-direction: column;
+}
+
+.power-image{
+  width: 100%;
+  flex-basis: 16% ;
+
+
+}
+.power-image img{
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #ffffff89;
+}
+.power-content{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  flex-basis: 70% ;
+  text-align: left;
+  padding: 17px 17px;
+  border-radius: 10%;
+  margin-right: 4%;
+  margin-bottom: 4vh;
+
+
+}
+.power-content h2{
+  color: #ffffffda;
+  font-size: 3vh;
+}
+.power-content p{
+  color: #ffffffda;
+  font-size: 1.9vh;
+  margin-top: 1.8vh;
+}
+.power-content1 h2{
+  color: #ffffffda;
+  font-size: 3vh;
+}
+.power-content1 p{
+  color: #ffffffda;
+  font-size: 1.9vh;
+  margin-top: 1.8vh;
+}
+.power-image1{
+  width: 100%;
+  flex-basis: 16% ;
+
+
+}
+.power-image1 img{
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #ffffff89;
+}
+.power-content1{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  flex-basis: 70% ;
+  text-align: left;
+  padding: 17px 17px;
+  border-radius: 10%;
+  margin-left: 4%;
+  margin-bottom: 4vh;
+
+
+
+}
+.fire{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.earth{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+
+}
+.list-power1{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 30vh;
+  flex-basis: 50%;
+  flex-direction: column;
+  margin-top: 30vh;
+  height: 40%;
+
+}
+.electricity{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+
+}
+.water{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+
+}
+.bg4{
+  background-image: url("/image/bg2.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+.name{
+
+}
   }

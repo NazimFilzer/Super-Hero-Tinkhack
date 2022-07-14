@@ -354,7 +354,7 @@ form{
   border-radius: 8px;
   width: 100%;
   font-size: 1.9vh;
-  color: #3d3d3d;
+  color: #3a3a3a;
   
 }
 
@@ -2091,7 +2091,7 @@ textarea{
     }
 
     .bg3{
-  background-image: url("/image/bg4.jpg");
+  background-image: url("/image/bg5.jpg");
   height: 100vh;
   width: 100%;
   background-position: top;

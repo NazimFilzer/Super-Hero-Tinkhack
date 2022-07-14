@@ -7,13 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title></title>
   <link rel="stylesheet" href="/stylesheets/{{style}}">
-<<<<<<< HEAD
-   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/x-icon" href="image/">
-=======
-  <script src="https://cdn.tailwindcss.com"></script>
+  {{!-- <script src="https://cdn.tailwindcss.com"></script> --}}
   <link rel="icon" type="image/x-icon" href="image/logo1.png">
->>>>>>> 3632714c1e5b798e193bdcd00447db47c7abb742
 </head>
 
 <body>
@@ -40,48 +35,37 @@
     <div class="firefly"></div>
   </div>
 
-  <nav class="nav1 backdrop-opacity-10 backdrop-blur-lg md:backdrop-blur-lg xl:md:bg-transparent">
+  <nav>
     <div class="nav-left">
       <a href="/"><img class="logo" src="/image/logo.png"></a>
-
     </div>
-    <div class="w-6 block md:hidden">
-      <label for="navbarToggler">
-        <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
-        <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
-        <div class="h-1 my-1 bg-white border-[1px] border-white"></div>
-      </label>
-    </div>
-    <input type="checkbox" id="navbarToggler" class="hidden">
-    <div class="nav-right top-16 left-0 hidden md:flex flex-col  md:flex-row justify-evenly items-center m-6 gap-6 ">
-
-      <div class="nav-button transition duration-300 hover:scale-105">
+    <div class="nav-right">
+      <!--<div class="notification-icon">
+                <img src="image/notification.png" alt="">
+              </div>--->
+      <div class="nav-button">
         <a href="/">Home</a>
       </div>
-      <div class="nav-button transition duration-300 hover:scale-105">
-        <a href="/powers">Features</a>
+      <div class="nav-button">
+        <a href="/powers">Powers</a>
       </div>
-      <div class="nav-button transition duration-300 hover:scale-105">
+      <div class="nav-button">
         <a href="/merch">Merchandise</a>
       </div>
-      <div class="nav-button  transition duration-300 hover:scale-105">
+      <div class="nav-button">
         <a href="/contact">Contact Me</a>
-      </div>
-       
+      </div> 
+    
 
     </div>
-<<<<<<< HEAD
-    <div class="water">
-      
-      <div class="power-content1">
-=======
   </nav>
+<audio id="mySoundClip">
+	<source src="/audio/water.wav"></source>
+</audio>
+
   <div class="powers">
     <div class="list-power">
       <div class="fire">
-        <div class="power-image">
-          <img src="/image/fire.gif">
-        </div>
         <div class="power-content">
           <h2>Fire</h2>
           <p>Earth-shatteringly mighty. Thodupuzha's landslides are a bane, turning its locals into a population pudding
@@ -89,18 +73,23 @@
             its place, and his doubters as well.</p>
 
         </div>
+        <div class="power-image">
+          <img src="/image/fire.gif">
+        </div>
+        
       </div>
       <div class="earth">
 
-        <div class="power-content1">
+     
+        <div class="power-image1">
+          <img src="/image/earth.gif">
+
+        </div>
+           <div class="power-content1">
           <h2>Earth</h2>
           <p>Earth-shatteringly mighty. Thodupuzha's landslides are a bane, turning its locals into a population pudding
             everytime it feels like it. Well fret no longer, as Super Mallu's earth bending powers puts the dirt back in
             its place, and his doubters as well.</p>
-
-        </div>
-        <div class="power-image1">
-          <img src="/image/earth.gif">
 
         </div>
       </div>
@@ -108,42 +97,39 @@
 
     <div class="list-power1">
       <div class="electricity">
+        <div class="power-content">
+           <h2>Electricity</h2>
+          <p>A lightning rod or a meta human battery? Exposed personnel working in the industrial region of thodupuzha getting fried is a thing of a past as <hero name> absorbs all power surges and converts it back into useful energy whenever the need arises, lightning fast. Never miss a text from your crush again due to a power cut!</p>
+
+
+        </div>
         <div class="power-image">
           <img src="/image/electricity.gif">
 
         </div>
-        <div class="power-content">
-
-        </div>
->>>>>>> 3632714c1e5b798e193bdcd00447db47c7abb742
+        
 
       </div>
-        <div class="power-image1">
-          <img src="/image/water.gif">
-
-      </div>
-<<<<<<< HEAD
-    </div>
-  </div>
-</div>
-=======
+        
       <div class="water">
 
-        <div class="power-content1">
-
-        </div>
+      
         <div class="power-image1">
           <img src="/image/water.gif">
+
+        </div>
+         <div class="power-content1">
+           <h2>Water</h2>
+          <p>Water, water everywhere. The omnipresence of water during a classic Thodupuzha deluge only finds a worthy competitor in <hero name>, who gives back the sea what belongs to it and the people their livelihoods back.</p>
+
 
         </div>
       </div>
     </div>
   </div>
->>>>>>> 3632714c1e5b798e193bdcd00447db47c7abb742
 
   </header>
-
-  </script>
+	
   </head>
 
 </body>
