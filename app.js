@@ -77,10 +77,10 @@ app.post("/login", async (req, res) => {
         res.redirect("/response")
 
       } else {
-        res.send("Passoword is Incorrect")
+        res.send("Password is Incorrect, Please Goback and retry")
       }
     } else {
-      res.send("User not found")
+      res.send("User not found,Please Go back and retry")
     }
   } catch (err) {
     console.log(err);
