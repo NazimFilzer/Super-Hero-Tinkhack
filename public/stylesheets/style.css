@@ -358,7 +358,7 @@ a .online {
   height: 34vh;
   flex-basis: 60%;
   margin-bottom: 10vh;
-  margin-top: 2vh;
+  margin-top: 3vh;
 }
 
 .power-image {
@@ -396,9 +396,11 @@ a .online {
 .power-content p {
   color: #f2f7ff;
   font-size: 1.9vh;
-  margin-top: 1.4vh;
+  margin-top: 1.2vh;
   letter-spacing: .2px;
   font-family: 'Kanit', sans-serif;
+  line-height: 1.3;
+
 
 }
 
@@ -412,9 +414,11 @@ a .online {
 .power-content1 p {
   color: #f2f7ff;
   font-size: 1.9vh;
-  margin-top: 1.4vh;
+  margin-top: 1.2vh;
   letter-spacing: .2px;
   font-family: 'Kanit', sans-serif;
+  line-height: 1.4;
+
 
 
 }
