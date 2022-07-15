@@ -60,32 +60,35 @@
 
 
   </nav>
-    <div class="flex mb-5 pr-40 py-12 justify-end" >
-        <div class="jam sm:w-50% md:w-1/3  p-5 girounded flex-5 backgroundbox">
-            <form action="/login" method="post">
-                <div>
-                    <span class=" text-sm text-gray-600 font" style="color: #fff;">Enter Username</span><br>
+  
+
+    <div class="flex mb-4 form-group  w-50 h-100 xl:mx-20 my-20 xl:w-50 inline xl:float-right xl:pr-40  ">
+    <div class="jam w-full xl:w-100 md:w-50   p-5 rounded flex-0 backgroundbox items-end xl:px-10 ">
+      <form class = "" action="/login" method="post">
+   <div>
+                    <span class=" text-sm text-gray-600 font-semibold tracking-wider" style="color: #fbfaf5;">Enter Username</span><br>
                     <input id="username" name="username"
-                        class="form-control w-full bg-gray-300 text-gray-900 mt-1 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                        class="form-control pl-5 pr-10  w-full bg-gray-300 text-gray-900 mt-1 p-2 rounded-lg focus:outline-none focus:shadow-outline"
                         type="text" placeholder="">
                 </div>
                 <div class="mt-4">
-                    <span class=" text-sm text-gray-600 font" style="color: #fff;">Enter Password</span><br>
+                    <span class=" text-sm text-gray-600 font-semibold tracking-wider" style="color: #fbfaf5;">Enter Password</span><br>
                     <input id="password" name="password"
-                        class="w-full form-control bg-gray-300 text-gray-900 mt-1 p-2 rounded-lg focus:outline-none focus:shadow-outline"
-                        type="password">
+                        class="pl-5 pr-10 w-full form-control bg-gray-300 text-gray-900 mt-1 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="password"></div>
                 <div class="mt-4">
                     <button id="submit" type="submit"
                         class="btn btn-primary uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-100  focus:outline-none focus:shadow-outline hover:bg-indigo-600 active:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300">
                         Login
                     </button>
-            </form>
-        </div>
+                    
+      </form>
+      </div>
     </div>
-    </div>
-    </div>
+        
 
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
 
 </html>
+

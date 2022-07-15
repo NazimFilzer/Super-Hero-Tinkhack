@@ -34,7 +34,9 @@ body{
 }
 
 .backgroundbox{
+    float: right;
     border-radius: 2em;
+    overflow: hidden;
     height: 100%;
    
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
@@ -162,6 +164,8 @@ top: 196px;
     display: none;
   
   }
+
+  
   
   .nav-button img{
     width: 24px;
