@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:SFPRODISPLAYREGULAR, sans-serif;
+    font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -35,7 +35,7 @@ html::-webkit-scrollbar-track{
     background-color: #62626228;
 
 }
-@font-face {
+/* @font-face {
     font-family: SFPRODISPLAYREGULAR;
     src: url(/font/SFPRODISPLAYREGULAR.OTF);
   }
@@ -46,7 +46,7 @@ html::-webkit-scrollbar-track{
 @font-face {
     font-family: SFPRODISPLAYBOLD;
     src: url(/font/SFPRODISPLAYBOLD.OTF);
-  }
+  } */
 body{
     background: #ffffff;
     -webkit-user-select: none;
@@ -56,12 +56,12 @@ body{
     -o-user-select: none;
     user-select: none;
     cursor:url(/image/logo.cur),auto;
-    font-family: "poppins";
+    font-family: 'Kanit', sans-serif;
     
 }
 
 a,p{
-    font-family: SFPRODISPLAYMEDIUM;
+    font-family: 'Kanit', sans-serif;
     
 }
 .bg{
@@ -168,7 +168,7 @@ nav{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 13px;
-    font-family: SFPRODISPLAYMEDIUM;
+    font-family: 'Kanit', sans-serif;
     opacity: 1;
 }a
 .online{
@@ -189,9 +189,9 @@ nav{
 }
 .name{
     margin-bottom: 20px;
-    font-family: SFPRODISPLAYBOLD;
+    font-family: 'Kanit', sans-serif;
     font-size: 20px;
-    font: 700 normal 1.5em 'tahoma';
+    font: 700 normal 1.5em "Kanit";
     text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 
 }
@@ -199,7 +199,7 @@ nav{
 .paragraph p{
     font-size: 14px;
     opacity: .8;
-    font-family: SFPRODISPLAYREGULAR ;
+    font-family: 'Kanit', sans-serif;
 
 
 }
@@ -1819,17 +1819,17 @@ nav{
 }
 .name{
   margin-bottom: 20px;
-  font-family: SFPRODISPLAYBOLD;
+  font-family: 'Kanit', sans-serif;
   font-size: 20px;
   color: #ffffff;
-  font:SFPRODISPLAYBOLD;
+  /* font:SFPRODISPLAYBOLD; */
   text-shadow: 0px 0px #222324, 0px 0px #222324, 0px 0px #222324;
   margin-top: 3vh;
 }
 .paragraph p{
   font-size: 14px;
   opacity: .8;
-  font-family: SFPRODISPLAYREGULAR ;
+  font-family: 'Kanit', sans-serif;
   color: #ffffff;
 
 
