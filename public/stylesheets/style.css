@@ -352,6 +352,7 @@ nav{
   font-size: 1.9vh;
   margin-top: 1.8vh;
   letter-spacing: .6px;
+  font-family: SFPRODISPLAYREGULAR;
 
 }
 .power-content1 h2{
@@ -365,6 +366,8 @@ nav{
   font-size: 1.9vh;
   margin-top: 1.8vh;
   letter-spacing: .6px;
+  font-family: SFPRODISPLAYREGULAR;
+
 
 }
 .power-image1{
@@ -1870,20 +1873,28 @@ transform: scale(1.5);
   padding: 20px;
   flex-direction: column;
   text-align: center;
-  align-items: stretch
+  align-items: center;
+  margin-right: 0px;
+  margin-left: 19.933;
+  top: 69.448;
+  right: 0px;
+  margin-left: 0px;
+
 
 }
+
 .row-product-1{
   display: flex;
   position: absolute;
   margin-top: 115vh;
-  margin-left: 10vh;
   padding: 20px;
-  margin-right: 40%;
   flex-direction: column;
   text-align: center;
-  align-items: stretch
-
+  align-items: center;
+  margin-right: 0px;
+  margin-left: 19.933;
+  right: 0px;
+  margin-left: 0px;
 
 }
 .item-box{
@@ -1945,21 +1956,25 @@ transform: scale(1.5);
 }
 .power-content h2{
   color: #ffffffda;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 .power-content p{
   color: #ffffffda;
-  font-size: 1.9vh;
+  font-size: 1.5vh;
   margin-top: 1.8vh;
+  font-family: SFPRODISPLAYREGULAR;
+
 }
 .power-content1 h2{
   color: #ffffffda;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 .power-content1 p{
   color: #ffffffda;
-  font-size: 1.9vh;
+  font-size: 1.5vh;
   margin-top: 1.8vh;
+  font-family: SFPRODISPLAYREGULAR;
+
 }
 .power-image1{
   width: 100%;
@@ -2007,7 +2022,7 @@ transform: scale(1.5);
   position: relative;
   flex-basis: 50%;
   flex-direction: column;
-  margin-top: 30vh;
+  margin-top: 27vh;
   height: 48%;
 
 }
@@ -2077,5 +2092,16 @@ transform: scale(1.5);
 
 
 
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 2% 10px 1.5%;
+  position: sticky;
+  top:0;
+  z-index: 5;
+  background: rgba(44, 44, 44, 0.078);
+  backdrop-filter: blur(17px);
 }
   }
