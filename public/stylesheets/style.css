@@ -240,6 +240,8 @@ a .online {
   border-radius: 32px;
   padding: 10px 20px;
   color: #ffffff;
+  font-weight: bold;
+
 }
 
 .button:hover a {
@@ -353,10 +355,10 @@ a .online {
   display: flex;
   width: 100%;
   position: relative;
-  height: 30vh;
-  flex-basis: 50%;
+  height: 34vh;
+  flex-basis: 60%;
   margin-bottom: 10vh;
-  margin-top: 5vh;
+  margin-top: 2vh;
 }
 
 .power-image {
@@ -375,7 +377,7 @@ a .online {
   background: rgba(8, 8, 8, 0.2);
   backdrop-filter: blur(15px);
   width: 100%;
-  flex-basis: 50%;
+  flex-basis: 60%;
   text-align: left;
   padding: 17px 17px;
   border-radius: 10%;
@@ -394,7 +396,7 @@ a .online {
 .power-content p {
   color: #f2f7ff;
   font-size: 1.9vh;
-  margin-top: 1.8vh;
+  margin-top: 1.4vh;
   letter-spacing: .2px;
   font-family: 'Kanit', sans-serif;
 
@@ -410,7 +412,7 @@ a .online {
 .power-content1 p {
   color: #f2f7ff;
   font-size: 1.9vh;
-  margin-top: 1.8vh;
+  margin-top: 1.4vh;
   letter-spacing: .2px;
   font-family: 'Kanit', sans-serif;
 
@@ -433,7 +435,7 @@ a .online {
   background: rgba(8, 8, 8, 0.2);
   backdrop-filter: blur(15px);
   width: 100%;
-  flex-basis: 50%;
+  flex-basis: 60%;
   text-align: left;
   padding: 17px 17px;
   border-radius: 10%;
@@ -447,7 +449,7 @@ a .online {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 
 }
 
@@ -455,7 +457,7 @@ a .online {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 
 
 }
@@ -472,7 +474,7 @@ a .online {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 
 
 }
@@ -481,7 +483,7 @@ a .online {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 
 
 }
@@ -2299,7 +2301,7 @@ a .online {
   }
 
   .paragraph p {
-    font-size: 14px;
+    font-size: 12px;
     opacity: .8;
     font-family: 'Kanit', sans-serif;
     color: #ffffff;
@@ -2321,6 +2323,7 @@ a .online {
     border-radius: 32px;
     padding: 10px 20px;
     color: #ffffff;
+    font-weight: bold;
   }
 
   .button:hover a {
@@ -2400,12 +2403,12 @@ a .online {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
     width: 100%;
-    flex-basis: 70%;
+    flex-basis: 78%;
     text-align: left;
     padding: 17px 17px;
     border-radius: 10%;
     margin-right: 4%;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 
 
   }
@@ -2453,12 +2456,12 @@ a .online {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
     width: 100%;
-    flex-basis: 70%;
+    flex-basis: 78%;
     text-align: left;
     padding: 17px 17px;
     border-radius: 10%;
     margin-left: 4%;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 
 
 
@@ -2487,7 +2490,7 @@ a .online {
     position: relative;
     flex-basis: 50%;
     flex-direction: column;
-    margin-top: 27vh;
+    margin-top: 28vh;
     height: 48%;
 
   }

@@ -314,7 +314,7 @@ a .online {
 
 .contact {
   position: fixed;
-  top: 19%;
+  top: 18%;
   margin-left: 63%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
