@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:SFPRODISPLAYREGULAR, sans-serif;
-    box-sizing: border-box;
+        box-sizing: border-box;
 }
 html{
     scrollbar-width: thin;
@@ -61,8 +61,8 @@ body{
 }
 
 a,p{
-    font-family: SFPRODISPLAYMEDIUM;
-    
+  font-family: SFPRODISPLAYMEDIUM;
+
 }
 .bg{
   background-image: url("/image/bg.jpg");
@@ -1853,6 +1853,7 @@ nav{
   opacity: .8;
   font-family: SFPRODISPLAYREGULAR ;
   color: #ffffff;
+  text-align: justify;
 
 
 }
