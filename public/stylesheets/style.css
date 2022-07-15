@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:SFPRODISPLAYREGULAR, sans-serif;
+    font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -35,7 +35,7 @@ html::-webkit-scrollbar-track{
     background-color: #62626228;
 
 }
-@font-face {
+/* @font-face {
     font-family: SFPRODISPLAYREGULAR;
     src: url(/font/SFPRODISPLAYREGULAR.OTF);
   }
@@ -46,7 +46,7 @@ html::-webkit-scrollbar-track{
 @font-face {
     font-family: SFPRODISPLAYBOLD;
     src: url(/font/SFPRODISPLAYBOLD.OTF);
-  }
+  } */
 body{
     background: #ffffff;
     -webkit-user-select: none;
