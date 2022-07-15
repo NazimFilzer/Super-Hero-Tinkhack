@@ -74,7 +74,7 @@ app.post("/login", async (req, res) => {
     const user = await Auth.findOne({ username: req.body.username });
     if (user) {
       if (user.password == req.body.password) {
-        res.redirect("/response")
+        res.redirect("/reply")
 
       } else {
         res.send("Password is Incorrect, Please Go back and retry")
@@ -92,6 +92,10 @@ app.get("/response", async (req, res) => {
     res.render("response", { response, style: "response.css" });
   })
 
+})
+
+app.get("/reply",(req,res)=>{
+  res.render("contactresponse",{style:"contact.css"})
 })
 
 app.listen(process.env.PORT || 3000, function () {
