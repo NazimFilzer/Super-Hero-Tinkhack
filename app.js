@@ -55,7 +55,7 @@ app.post("/contact", async function (req, res) {
 
     const data = await Contact.create({ person, phone, area, problem });
     console.log(data);
-    res.redirect("/");
+    res.redirect("/reply");
   } catch (err) {
     console.log(err.message);
   }
@@ -74,7 +74,7 @@ app.post("/login", async (req, res) => {
     const user = await Auth.findOne({ username: req.body.username });
     if (user) {
       if (user.password == req.body.password) {
-        res.redirect("/reply")
+        res.redirect("/response")
 
       } else {
         res.send("Password is Incorrect, Please Go back and retry")
