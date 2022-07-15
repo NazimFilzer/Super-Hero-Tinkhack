@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: SFPRODISPLAYREGULAR;
     src: url(/font/SFPRODISPLAYREGULAR.OTF);
   }
@@ -9,10 +9,10 @@
 @font-face {
     font-family: SFPRODISPLAYBOLD;
     src: url(/font/SFPRODISPLAYBOLD.OTF);
-  }
+  } */
 
   a,p,span,input{
-    font-family: SFPRODISPLAYMEDIUM;
+    font-family: 'Kanit', sans-serif;
     
 }
 body{
@@ -114,7 +114,7 @@ nav{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 13px;
-    font-family: SFPRODISPLAYMEDIUM;
+    font-family: 'Kanit', sans-serif;
     opacity: 1;
 }a
 .online{
