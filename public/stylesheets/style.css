@@ -184,7 +184,7 @@ nav{
     margin-top: 6%;
     margin-left:60%;
     color: #ffffff;
-    width:50vh;
+    width:60vh;
 
 }
 .name{
@@ -432,6 +432,10 @@ nav{
 
 }
 .nav-right1{
+  display: none;
+}
+
+#row2{
   display: none;
 }
 .firefly {
@@ -1733,14 +1737,22 @@ nav{
 
 }
 .row-product-1{
-  
-  position: relative;
-  margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 10vh;
+  display: flex;
+  position: absolute;
+  margin-top: 115vh;
   padding: 20px;
-  margin: auto;
-  margin-top: 0%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-right: 0px;
+  right: 0px;
+  margin-left: 0px;
+  display: none;
+
+}
+#row2{
+  top: 114vh;
+  display: flex;
 
 }
 .item-box{
@@ -1883,20 +1895,7 @@ transform: scale(1.5);
 
 }
 
-.row-product-1{
-  display: flex;
-  position: absolute;
-  margin-top: 115vh;
-  padding: 20px;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin-right: 0px;
-  margin-left: 19.933;
-  right: 0px;
-  margin-left: 0px;
 
-}
 .item-box{
   height: 30vh;
   width: 25vh;
@@ -1905,7 +1904,7 @@ transform: scale(1.5);
   border-radius: 8px;
   text-align: center;
   margin-right: 30px;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
   
 
 }
