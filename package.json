@@ -18,7 +18,7 @@
     "geolocation": "^0.2.0",
     "hbs": "^4.2.0",
     "lodash": "^4.17.11",
-    "mongoose": "^6.4.0",
+    "mongoose": "^6.4.6",
     "node-fetch": "^3.2.6",
     "node-geocoder": "^4.1.0",
     "nodemon": "^2.0.19",
